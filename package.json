@@ -1,0 +1,26 @@
+{
+  "name": "qestbin",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "start:dev": "NODE_ENV=development nodemon ./app/bin/www --exec babel-node",
+    "build": "rm -rf ./build && mkdir build && babel --out-dir ./build --source-maps --copy-files ./app"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "mongodb": "^3.0.2",
+    "morgan": "~1.9.0",
+    "node-sass-middleware": "0.9.8",
+    "pug": "2.0.0-beta11",
+    "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "nodemon": "^1.15.0"
+  }
+}
